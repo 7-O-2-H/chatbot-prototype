@@ -5,6 +5,9 @@ import streamlit as st
 from langchain.llms import GPT4All
 from langchain import PromptTemplate, LLMChain
 
+#Python imports
+from langchain.agents.agent_toolkits import create_python_agent
+from langchain.tools.python.tool import PythonREPLTool
 # Path to weights
 PATH = '/Users/joshkelly/Library/Application Support/nomic.ai/GPT4All/mistral-7b-openorca.Q4_0.gguf'
 
